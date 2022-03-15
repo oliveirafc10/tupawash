@@ -1,9 +1,11 @@
+import React from 'react';
 import Head from 'next/head';
-export default function Home () {
+
+const Home: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>Tupã Wash</title>
+        <title>Tupã Wash | Home</title>
       </Head>
 
       <main>
@@ -13,3 +15,5 @@ export default function Home () {
     </div>
   )
 }
+
+export default Home
