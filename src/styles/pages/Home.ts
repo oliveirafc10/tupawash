@@ -1,14 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-
-  display: flex;
-  justify-content:  border
-  align-items: center;
-  flex-direction: column;
-  margin: 10px;
 
   h1 {
     font-size: 54px;
@@ -24,39 +18,59 @@ export const Container = styled.div`
   }
 
   @media (max-width: 699px) {
-      margin: 0;
-      width: 100%;
-      padding: 0.8 rem;
+    margin-top: 0;
     }
 
 `;
 
 export const Header = styled.header `
 
-  display: flex;
-  justify-content: border;
-  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-content: center;
+  aline-align: center;
+  height: 120px;
+  background: #272b33;
+  border-radius: 20px;
+
+  image {
+    margin: 20px;
+  }
 
   ul {
   color: ${props => props.theme.colors.text};
-  margin-left: 50px;
-  margin-top: 20px;
+  margin: 45px;
+  aline-text: center;
   font-size: 24px;
   line-height: 32px;
+  }
+
+  button {
+    margin-top: 35px;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px
+  }
 
 }
 @media (max-width: 699px) {
-  margin: 0;
-  width: 100%;
-  padding: 0.8 rem;
+  margin: 0.2rem;
+  height: 110px;
 
   display: grid;
-  justify-content: center;
+  justify-content: space-between;
+
+  image {
+    margin: 0.8rem;
+    width: 10.5rem;
+    height: 4.8rem;
+  }
 
   ul {
-    margin-top: 0,6 rem;
+    margin-top: 0;
     margin-left: 0;
   }
+
 }
 
 `;

@@ -12,8 +12,13 @@ const Home: React.FC = () => {
       </head>
 
       <Header>
-        <Logo />
+        <image>
+          <Logo />
+        </image>
         <ul>Estética automotiva em Tupã</ul>
+        <button>
+          tel 14 9 9665 6138
+        </button>
       </Header>
 
       <h1>Bem vindo a Tupã Wash</h1>
