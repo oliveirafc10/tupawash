@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 
 import Logo from '../assets/logo.svg'
-import { Container, Header } from '../styles/pages/Home';
+import { Container, Header, Main } from '../styles/pages/Home';
 
 const Home: React.FC = () => {
   return (
@@ -17,12 +17,14 @@ const Home: React.FC = () => {
         </image>
         <ul>Estética automotiva em Tupã</ul>
         <button>
-          tel 14 9 9665 6138
+          14 9 9665 6138
         </button>
       </Header>
 
-      <h1>Bem vindo a Tupã Wash</h1>
-      <p>Seu carro novo de novo</p>
+      <Main>
+        <h1>Bem vindo a Tupã Wash</h1>
+        <p>Seu carro novo de novo</p>
+      </Main>
     </Container>
   )
 }
