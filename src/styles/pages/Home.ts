@@ -1,19 +1,21 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
+
   height: 100vh;
+  max-width: 1180px;
 
   @media (max-width: 699px) {
     margin-top: 0;
     justify-content: center;
-    aline-align: auto;
+
     }
 `;
 
 export const Header = styled.header `
 
   display: grid;
+  aline-items: center;
   grid-template-columns: 1fr 2fr 1fr;
   justify-items: center;
   height: 120px;
@@ -83,5 +85,11 @@ export const Main = styled.main `
     margin-top: 20px;
     font-size: 24px;
     line-height: 32px;
+  }
+
+  Carro{
+    margin: 0;
+
+
   }
 `;

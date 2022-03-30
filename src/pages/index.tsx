@@ -2,6 +2,8 @@ import React from 'react';
 import Head from 'next/head';
 
 import Logo from '../assets/logo.svg'
+import Fundo from '../assets/carro.svg';
+
 import { Container, Header, Main } from '../styles/pages/Home';
 
 const Home: React.FC = () => {
@@ -24,6 +26,7 @@ const Home: React.FC = () => {
       <Main>
         <h1>Bem vindo a Tupã Wash</h1>
         <p>Seu carro novo de novo</p>
+        <Fundo />
       </Main>
     </Container>
   )
